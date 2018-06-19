@@ -4,6 +4,15 @@ body {
 
 /* Containers */
 
+.container-wrapper {
+    
+}
+
+.container-wrapper--red {
+    background-color: #d65300;
+    color:white;
+}
+
 .alert-container {}
 
 .callout-container {
@@ -14,11 +23,10 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
     display: flex;
     align-items: center;
-
     position: relative;
+    justify-content:center;
 }
 
 .opaque-overlay {
@@ -28,6 +36,12 @@ body {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    
 }
 
 .quotes-container {}
@@ -84,6 +98,7 @@ body {
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
     color: white;
+    
 }
 
 .navbar-btn {
@@ -114,29 +129,34 @@ body {
 
 .jumbotron .lead {
     color: #a7a7a7;
-    margin: 25px 0;
 }
-
+    
+    
 .jumbotron small {
     font-size: 60%;
     font-style: italic;
-    color: #d0d0d0;
+    
 }
 
 /* Block Divider */
 
 .block-divider {
-
+    width:66px;
     height: 5px;
     border: 0;
+    
 }
 
 .block-divider--orange {
     background-color: #d59300;
 }
 
+.block-divider--white {
+    background-color:white;
+}
+
 .block-divider--short {
-    width: 76px;
+    width: 35px;
 }
 
 /* Buttons */
@@ -181,4 +201,53 @@ body {
     margin-bottom: 0;
     border: 1px solid transparent;
     border-radius: 0;
+}
+
+
+/* Page headers */
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+
+/* Quotes */ 
+
+.quotes .page-header {
+    margin-bottom: 25px;
+}
+
+blockquote.quote {
+    border-left: 0;
+}
+
+
+/* Features */
+
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature .glyphicon {
+    display: block;
+    margin-bottom:20px;
+    font-size:45px;
+    line-height:45px;
+}
+
+.feature .btn {
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    color: #d75300;
+    margin-top: 10px;
 }
